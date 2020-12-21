@@ -48,11 +48,10 @@ function reduceToAllTrue(array) {
 }
 
 function reduceToAnyTrue(array) {
-    let result = false;
     for (let num of array) {
         if (!!num === true) {
-            result = true;
+            return true;
         };
     };
-    return result;
+    return false;
 }
